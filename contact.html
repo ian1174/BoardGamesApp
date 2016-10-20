@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">	
+		<title>Board games aficionados</title>
+		<link rel="stylesheet" type="text/css" href="style.css">	
+	</head>
+	<body>
+
+		<div class="header">
+			<h1>Board Games Aficionados</h1>
+		</div>
+
+		<div class="row">
+			<div class="col-3 col-m-3 menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="events1.php">Weekly calender</a></li>
+					<li><a href="form.html">Join</a></li>
+					<li><a href="about.html">About us</a></li>
+					<li><a class="active" href="contact.html">Contact us</a></li>					
+				</ul>
+			</div>
+			
+			<div class="col-9 col-m-9">				
+				<h2>Contact Us</h2>
+				<p>Phone: 12346789</p>
+				<p>Email: aficionados@gmail.com</p>
+				<!-- <p><a href="mailto:aficionados@gmail.com?Subject=Hello%20again" target="_top">
+				Send email</a></p> -->
+				
+				<form action="mailto:aficionados@gmail.com" method="post" enctype="text/plain">
+				Name:<br>
+				<input type="text" name="name" placeholder="your name" required autofocus><br>
+				Your e-mail:<br>
+				<input type="email" name="mail" placeholder="your@email.com" required><br>
+				Comment:<br>
+				<textarea type="text" id="text" name="comment" placeholder="write your comment here...." rows="5" cols="" required></textarea>
+				<br>
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+			</div>
+        
+        </div>
+
+		<div class="footer">
+			<p><i>Board games aficionados</i></p><p>1970-2015</p>
+		</div>
+
+	</body>
+</html>

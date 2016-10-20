@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">	
+		<title>Board games aficionados</title>
+		<link rel="stylesheet" type="text/css" href="style.css">	
+	</head>
+	<body>
+
+		<div class="header">
+			<h1>Board Games Aficionados</h1>
+		</div>
+		<!-- menu -->
+		<div class="row">
+			<div class="col-3 col-m-3 menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="events1.php">Weekly calender</a></li>
+					<li><a class="active" href="form.html">Join</a></li>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="contact.html">Contact us</a></li>					
+				</ul>
+			</div>
+			<!-- form to enter player details -->
+			<form method="post" action="addplayer.php" id="form1">
+				<fieldset>
+					
+						<h3>Please complete your details and click submit to become a member</h3>
+						<label for="member_id">Member ID</label>
+						<input type="text" id="member_id" name="member_id" placeholder="member ID" size="50" required autofocus/>
+						<span class="error">* <?php echo $memberIDErr;?></span>
+						
+							
+							<!-- enter forst name -->
+							<tr>
+								<label for="firstname"><th>First name:</th></label>
+								<td>
+									<input type="text" id="firstname" name="firstname" placeholder="first name" size="50" required />
+									<span class="error">* <?php echo $firstnameErr;?></span>
+								</td>
+							</tr>
+							
+							<!-- enter last name -->
+							<tr>
+								<label for="lastname"><th>Last name:</th></label>
+								<td> 
+									<input type="text" id="lastname" name="lastname" placeholder="last name" size="50" required />
+									<span class="error">* <?php echo $lastnameErr;?></span>
+								</td>
+							</tr>
+
+							<!-- Email address -->
+							<tr>
+								<label for="email"><th>Email address:</th></label>
+								<td> 
+									<input type="email" id="email" name="email" placeholder="your@email.com" size="50" required />
+									<span class="error">* <?php echo $emailErr;?></span>
+								</td>
+							</tr>
+
+							<!-- Phone number  -->
+							<tr>
+								<label for="phone"><th>Phone number:</th></label>
+								<td> 
+									<input type="tel" id="phone" name="phone" placeholder="555 1234" size="30" required />
+									<span class="error">* <?php echo $phoneErr;?></span>
+								</td>
+							</tr>								
+							<br>	
+						<!-- submit or reset form --> 
+						<input type="submit" name="submit" id="submit" value="Submit" >
+						<input type="reset" name="reset" id="reset" value="Reset" >
+
+				</fieldset>
+			</form>				
+		</div>
+
+		<div class="footer">
+			<p><i>Board games aficionados</i></p><p>1970-2015</p>
+		</div>
+	</body>
+</html>			
+		
+
+
